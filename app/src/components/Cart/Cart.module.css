@@ -15,11 +15,26 @@
   margin: 1rem 0;
 }
 
-.actions {
+.actions, .actionsError {
   text-align: right;
 }
 
-.actions button {
+.actions h3 {
+  text-align: center;
+  color: green;
+}
+
+.actionsSubmitting {
+  text-align: center;
+}
+
+.actionsError p {
+  text-align: center;
+  color: red;
+}
+
+.actions button,
+.actionsError button {
   font: inherit;
   cursor: pointer;
   background-color: transparent;
@@ -30,7 +45,9 @@
 }
 
 .actions button:hover,
-.actions button:active {
+.actions button:active,
+.actionsError button:hover,
+.actionsError button:active {
   background-color: #5a1a01;
   border-color: #5a1a01;
   color: white;
